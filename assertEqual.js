@@ -1,16 +1,12 @@
-const assertEqual = function (actual, expected, suppressLogging = false) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    if (!suppressLogging) {
-      console.log(`✅  Assertion Passed: ${actual} === ${expected}`);
-    }
-    return true;
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+
   } else {
-    if (!suppressLogging) {
-      console.log(`🛑  Assertion Failed: ${actual} !== ${expected}`);
-    }
-    return false;
+    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
-
+// EXPORT MODULE
 module.exports = assertEqual;
+// console.log(assertEqual(1, 1));
